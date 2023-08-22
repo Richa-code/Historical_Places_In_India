@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places in India</title>
+    <style>
+        /* Your CSS styles here */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #333; color: white; padding: 5px; position: fixed; top: 0; width: 100%; text-align: center;">
+        <h1 style="margin: 0; line-height: 1;">Historical Places in India</h1>
+    </header>
+
+    <main style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px;">
+        <div class="place-card">
+            <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank">
+                <img src="taj.jpg" alt="Taj Mahal" style="max-width: 100%;">
+            </a>
+            <p>Enlisted in the Seven Wonders of the World, The Taj Mahal...</p>
+        </div>
+        <!-- Add more place cards here -->
+    </main>
+
+    <a href="#" id="showCode">Show Code</a>
+
+    <pre class="hidden">
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Historical Places in India&lt;/title&gt;
+            &lt;style&gt;
+                /* Your CSS styles here */
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;header style="background-color: #333; color: white; padding: 5px; position: fixed; top: 0; width: 100%; text-align: center;"&gt;
+                &lt;h1 style="margin: 0; line-height: 1;"&gt;Historical Places in India&lt;/h1&gt;
+            &lt;/header&gt;
+
+            &lt;main style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px;"&gt;
+                &lt;div class="place-card"&gt;
+                    &lt;a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank"&gt;
+                        &lt;img src="taj.jpg" alt="Taj Mahal" style="max-width: 100%;"&gt;
+                    &lt;/a&gt;
+                    &lt;p&gt;Enlisted in the Seven Wonders of the World, The Taj Mahal...&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;!-- Add more place cards here --&gt;
+            &lt;/main&gt;
+
+            &lt;footer style="background-color: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;"&gt;
+                Designed and Developed by Your Name
+            &lt;/footer&gt;
+
+            &lt;script&gt;
+                // JavaScript code here (if needed)
+            &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+
+    <script>
+        const codeSnippet = document.querySelector(".hidden");
+        const showCodeLink = document.getElementById("showCode");
+
+        showCodeLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            codeSnippet.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
